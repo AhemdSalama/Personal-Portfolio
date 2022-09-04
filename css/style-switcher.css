@@ -1,0 +1,82 @@
+.style-switcher
+{
+    position: fixed;
+    top:60px;
+    right:0px ;
+    padding:15px;
+    border:1px solid var(--bg-black-50);
+    background-color: var( --bg-black-100);
+    width:200px;
+    border-radius: 10px;
+    z-index: 101;
+    transition: all 0.3s ease;
+    transform:translateX(100%);
+}
+.style-switcher.open{
+    transform: translateX(-25px);
+}
+.style-switcher .s-icon{
+    position:absolute;
+    width:40px;
+    height: 40px;
+    font-size: 20px;
+    color:var(--text-black-900);
+    background:var(--bg-black-100);
+    border-radius: 50%;
+    border:1px solid var(--bg-black-50);
+    text-align: center;
+    margin-right: 25px;
+    right:100%;
+    cursor: pointer;
+    transition:all 0.5s ease;
+}
+.style-switcher .s-icon i{
+    line-height: 40px;
+}
+.style-switcher .day-night{
+    top:55px;
+}
+.style-switcher .style-switcher-toggler{
+    top:0;
+}
+.style-switcher h4{
+    font-size:16px;
+    margin:0 0 15px;
+    color:var(--text-black-700);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.style-switcher .colors
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.style-switcher .colors span{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.style-switcher .color-1
+{
+    background-color: #ec1839;
+}
+.style-switcher .color-2
+{
+    background-color:#fa5b0f ;
+}
+.style-switcher .color-3
+{
+    background-color: #37b182;
+}
+.style-switcher .color-4
+{
+    background-color: #1854b4;
+}
+.style-switcher .color-5
+{
+    background-color: #f021b2;
+}
